@@ -1,7 +1,7 @@
 package animals;
 
-public class Bird extends Animal {
-    public Bird(String name, int yearDiscovered) {
+public class Birds extends Animals {
+    public Birds(String name, int yearDiscovered) {
         super(name, yearDiscovered);
     }
 

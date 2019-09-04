@@ -1,12 +1,12 @@
 package animals;
 
-public abstract class Animal {
+public abstract class Animals {
     private static int baseId = 0;
     public int id;
-    private String name;
-    private int yearDiscovered;
+    public String name;
+    public int yearDiscovered;
 
-    public Animal(String name, int yearDiscovered) {
+    public Animals(String name, int yearDiscovered) {
         id = baseId++;
         this.name = name;
         this.yearDiscovered = yearDiscovered;
@@ -27,6 +27,11 @@ public abstract class Animal {
 
     public String reproduce() {
         return "Reproduces";
+    }
+
+    @Override
+    public String toString() {
+        return "\nAnimal Name: " + name + "\n" + "Year Discovered: " + yearDiscovered;
     }
 
 }
